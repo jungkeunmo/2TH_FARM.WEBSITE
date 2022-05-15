@@ -56,7 +56,7 @@ const Header = () => {
         <Box>
             <TopBox>
                 <Link href="/">
-                    <CustomLink>HOME</CustomLink>
+                    <CustomLink>COCOFARM</CustomLink>
                 </Link>
             </TopBox>
 
