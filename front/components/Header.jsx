@@ -37,10 +37,29 @@ const BottomBox = styled.div`
     align-items: center;
 `;
 
+const TitleLink = styled.a`
+    color: #fff;
+
+    margin: 0px 40px;
+
+    font-size: 19px;
+    font-weight: bold;
+
+    transition: 0.5s;
+
+    padding: 3px;
+
+    & :hover {
+        color: #e8e8a6;
+    }
+`;
+
 const CustomLink = styled.a`
     color: #fff;
+
     margin: 0px 40px;
-    font-size: 16px;
+
+    font-size: 15px;
 
     transition: 0.5s;
 
@@ -56,7 +75,7 @@ const Header = () => {
         <Box>
             <TopBox>
                 <Link href="/">
-                    <CustomLink>COCOFARM</CustomLink>
+                    <TitleLink>COCOFARM</TitleLink>
                 </Link>
             </TopBox>
 
