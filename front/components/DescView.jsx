@@ -30,14 +30,20 @@ const TextSection = styled.div`
     padding: 30px;
 `;
 
+const Texttitle = styled.p`
+    font-size: 20px;
+    font-weight: bold;
+`;
+
 const TextContent = styled.div``;
 
-const DescView = ({mode, image, desc1, desc2, desc3}) => {
+const DescView = ({mode, image, title, desc1, desc2, desc3}) => {
     return (
         <Wrapper mode={mode}>
             <ImageSection src={image}/>
 
             <TextSection>
+                <Texttitle>{title}</Texttitle>
                 <TextContent>{desc1}</TextContent>
                 <TextContent>{desc2}</TextContent>
                 <TextContent>{desc3}</TextContent>
