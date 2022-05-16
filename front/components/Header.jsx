@@ -5,7 +5,7 @@ import Link from "next/link";
 const Box = styled.header`
     width: 100%;
     height: 120px;
-    background-color: #557B83;
+    background-color: #8cc084;
     color: #fff;
 
     display: flex;
@@ -40,7 +40,7 @@ const BottomBox = styled.div`
 const CustomLink = styled.a`
     color: #fff;
     margin: 0px 40px;
-    font-size: 18px;
+    font-size: 16px;
 
     transition: 0.5s;
 
