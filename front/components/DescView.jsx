@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `;
 
 const ImageSection = styled.img`
-    width: 600px;
+    width: 650px;
     height: 350px;
 
     border-radius: 5px;

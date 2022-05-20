@@ -18,10 +18,10 @@ const Wrapper = styled.div`
 `;
 
 const TopImage = styled.img`
-    width: 800px;
-    height: 460px;
+    width: 900px;
+    height: 480px;
 
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 25px;
 
     transition: 0.5s;
@@ -149,7 +149,7 @@ const Brand = () => {
                 desc3="항상 최고를 드리겠다는 마인드로 하겠습니다."
             />
 
-            <div style={{ marginBottom: "20px" }}>
+            <div style={{ marginBottom: "50px" }}>
                 <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus laudantium </article>
                 <article> Quibusdam, earum. Vero sunt veritatis nostrum optio cumque dolor mollitia omnis,</article>
                 <article>consequuntur aut eum. Odio fuga quidem nulla cumque at?</article>
