@@ -10,4 +10,4 @@ const db = mysql2.createPool({
     database: process.env.DB_NAME,
 });
 
-export default db;
+module.exports = db;

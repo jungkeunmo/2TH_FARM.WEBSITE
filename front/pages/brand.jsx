@@ -70,7 +70,7 @@ const TextBox = styled.div`
     align-items: center;
 
     & :hover {
-        background-color: #797979;
+        background: #797979;
     }
 `;
 
