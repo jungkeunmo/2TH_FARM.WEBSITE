@@ -1,18 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal";
 
 const Wrapper = styled.div`
-    width: 800px;
+    width: 80%;
     height: 300px;
 
     display: flex;
     flex-direction: ${(props) => props.mode ===1 ? "row" : "row-reverse"};
-    margin-top: 150px;
+    margin-bottom: 300px;
 `;
 
 const ImageSection = styled.img`
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 350px;
 
     border-radius: 5px;
 
@@ -24,15 +25,24 @@ const ImageSection = styled.img`
 `;
 
 const TextSection = styled.div`
-    width: 400px;
+    width: calc(100% - 600px);
     height: 300px;
 
     padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
 `;
 
 const Texttitle = styled.p`
     font-size: 20px;
     font-weight: bold;
+
+    padding: 30px;
 `;
 
 const TextContent = styled.div``;
@@ -43,10 +53,18 @@ const DescView = ({mode, image, title, desc1, desc2, desc3}) => {
             <ImageSection src={image}/>
 
             <TextSection>
-                <Texttitle>{title}</Texttitle>
-                <TextContent>{desc1}</TextContent>
-                <TextContent>{desc2}</TextContent>
-                <TextContent>{desc3}</TextContent>
+                <Fade delay={0}>   
+                    <Texttitle>{title}</Texttitle>
+                </Fade>
+                <Fade delay={0}>
+                <   TextContent>{desc1}</TextContent>
+                </Fade>
+                <Fade delay={0}>
+                    <TextContent>{desc2}</TextContent>
+                </Fade>
+                <Fade delay={0}>
+                    <TextContent>{desc3}</TextContent>
+                </Fade>
             </TextSection>
         </Wrapper>
     )

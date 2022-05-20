@@ -2,6 +2,7 @@ import React from "react";
 import "antd/dist/antd.css"; 
 import Header from "../components/Header";
 import GlobalStyle from "../components/GlobalStyle";
+import Footer from "../components/Footer";
 
 const AppShell = ({ Component }) => {
   return (
@@ -14,6 +15,8 @@ const AppShell = ({ Component }) => {
       <Header />
 
       <Component />
+
+      <Footer/>
     </>
   );
 };
