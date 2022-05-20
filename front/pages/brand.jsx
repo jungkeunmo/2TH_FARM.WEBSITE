@@ -54,7 +54,7 @@ const TextBox = styled.div`
     width: 220px;
     height: 330px;
 
-    background-color: #575757;
+    background: linear-gradient(45deg, #797979, #575757);
 
     right: 30px;
     bottom: -20px;
