@@ -53,45 +53,47 @@ const Contact = () => {
             <ViewImage 
                 src={`https://image.edaily.co.kr/images/Photo/files/NP/S/2020/01/PS20011500928.jpg`}
             />
-            <FormWrapper 
-                form={contactForm}
-                wrapperCol={{ span: 20}}
-                labelCol= {{ span : 4 }}
-                ={finishHandler}
-            >
-                <Form.Item 
-                    label="고객명"
-                    name="name"
-                    rules={[{ required: true , message: "고객명은 필수입니다."}]}
+            <FormWrapper>
+                <Form
+                    form={contactForm}
+                    wrapperCol={{ span: 20}}
+                    labelCol= {{ span : 4 }}
+                    onFinish={finishHandler}
                 >
-                    <Input />
-                </Form.Item>
+                    <Form.Item 
+                        label="고객명"
+                        name="name"
+                        rules={[{ required: true , message: "고객명은 필수입니다."}]}
+                    >
+                        <Input />
+                    </Form.Item>
 
-                <Form.Item
-                    label="금액"
-                    name="price"
-                    rules={[{ required: true , message: "금액은 필수입니다."}]}
-                >
-                    <Input type="number"/>
-                </Form.Item>
+                    <Form.Item
+                        label="금액"
+                        name="price"
+                        rules={[{ required: true , message: "금액은 필수입니다."}]}
+                    >
+                        <Input type="number"/>
+                    </Form.Item>
 
-                <Form.Item
-                    label="연락처"
-                    name="mobile"
-                    rules={[{ required: true , message: "연락처는 필수입니다."}]}
-                >
-                    <Input />
-                </Form.Item>
+                    <Form.Item
+                        label="연락처"
+                        name="mobile"
+                        rules={[{ required: true , message: "연락처는 필수입니다."}]}
+                    >
+                        <Input />
+                    </Form.Item>
 
-                <Form.Item
-                    label="문의내용"
-                    name="content"
-                    rules={[{ required: true , message: "문의내용 필수입니다."}]}
-                >
-                    <Input />
-                </Form.Item>
+                    <Form.Item
+                        label="문의내용"
+                        name="content"
+                        rules={[{ required: true , message: "문의내용 필수입니다."}]}
+                    >
+                        <Input />
+                    </Form.Item>
 
-                <Button type="primary" htmlType="submit">문의하기</Button>
+                    <Button type="primary" htmlType="submit">문의하기</Button>
+                </Form>
             </FormWrapper>
         </Wrapper >;
 }
