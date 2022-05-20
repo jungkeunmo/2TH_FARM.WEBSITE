@@ -56,7 +56,7 @@ const TextBox = styled.div`
 
     background-color: #575757;
 
-    right: 300px;
+    right: 30px;
     bottom: -20px;
 
     border-radius: 2px;
@@ -68,6 +68,10 @@ const TextBox = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    & :hover {
+        background-color: #797979;
+    }
 `;
 
 const BtnBox = styled.div`
@@ -85,6 +89,12 @@ const CustomBtn = styled(Button)`
     font-size: 14px;
 
     background-color: #c1d7ae;
+
+    border: #c1d7ae;
+
+    & :hover {
+        background-color: #ffcab1;
+    }
 `;
 
 const Brand = () => {
@@ -129,6 +139,7 @@ const Brand = () => {
                 desc2="무농약으로 재배하고 있습니다."
                 desc3="앞으로도 고객 여러분들께 깨끗하고 신선한 농산물을 전달하겠습니다."
             />
+            
             <DescTitle />
             <DescView mode={2} 
                 title="코코팜의 환경은"
@@ -144,11 +155,11 @@ const Brand = () => {
                 <article>consequuntur aut eum. Odio fuga quidem nulla cumque at?</article>
             </div>
 
-            <div>
+            <BtnBox>
                 <CustomBtn onClick={() => goContact()} type="primary"> 
                     농산물 문의하기 
                 </CustomBtn>
-            </div>
+            </BtnBox>
         </Wrapper>
     );
 }
