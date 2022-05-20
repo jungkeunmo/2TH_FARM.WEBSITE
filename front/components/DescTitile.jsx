@@ -5,8 +5,10 @@ import { DatabaseOutlined } from "@ant-design/icons";
 const Box = styled.div`
     margin-bottom: 10px;
     font-size: 34px;
+    font-weight: 700;
 
     width: 80%;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,8 +20,8 @@ const Box = styled.div`
 
 const DescTitle = () => {
     return <Box>
-            <DatabaseOutlined />
-            머시기머시기
+            <DatabaseOutlined style={{ marginRight: "5px" }}/>
+            TITLE
         </Box>
 };
 

@@ -8,6 +8,7 @@ const Wrapper = styled.div`
 
     display: flex;
     flex-direction: ${(props) => props.mode ===1 ? "row" : "row-reverse"};
+
     margin-bottom: 300px;
 `;
 
@@ -16,8 +17,9 @@ const ImageSection = styled.img`
     height: 350px;
 
     border-radius: 5px;
-
     box-shadow: 3px 3px 7px #999;
+
+    transition: 0.5s;
 
     &:hover {
         filter: blur(3px);
@@ -28,7 +30,7 @@ const TextSection = styled.div`
     width: calc(100% - 600px);
     height: 300px;
 
-    padding: 30px;
+    padding: 50px;
 
     display: flex;
     flex-direction: column;
@@ -56,13 +58,13 @@ const DescView = ({mode, image, title, desc1, desc2, desc3}) => {
                 <Fade delay={0}>   
                     <Texttitle>{title}</Texttitle>
                 </Fade>
-                <Fade delay={0}>
+                <Fade delay={300}>
                 <   TextContent>{desc1}</TextContent>
                 </Fade>
-                <Fade delay={0}>
+                <Fade delay={600}>
                     <TextContent>{desc2}</TextContent>
                 </Fade>
-                <Fade delay={0}>
+                <Fade delay={900}>
                     <TextContent>{desc3}</TextContent>
                 </Fade>
             </TextSection>

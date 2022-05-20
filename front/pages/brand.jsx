@@ -2,6 +2,7 @@ import React, { useEffect, useState} from "react";
 import styled from "styled-components";
 import DescView from "../components/DescView";
 import DescTitle from "../components/DescTitile";
+import Fade from "react-reveal";
 import { Button } from "antd";
 import {useRouter} from "next/router";
 import axios from "axios";
@@ -77,8 +78,8 @@ const BtnBox = styled.div`
     justify-content: flex-end;
 `;
 
-const CustomBtn = styled.button`
-    width: 80%;
+const CustomBtn = styled(Button)`
+    width: 200px;
     height: 45px;
 
     font-size: 14px;
@@ -104,18 +105,19 @@ const Brand = () => {
 
     return (
         <Wrapper>
-            <RelWrapper>
-                <TopImage src="https://i.pinimg.com/474x/72/cb/7b/72cb7b87f64c6f6819c2f2cedf09b17f.jpg"/>
+            <Fade>
+                <RelWrapper>
+                    <TopImage src="https://i.pinimg.com/474x/72/cb/7b/72cb7b87f64c6f6819c2f2cedf09b17f.jpg"/>
 
-                <TextBox>
-                    <div>건강한 식단과</div>
-                    <div>신선한 식단</div>
-                    <div>그리고 직접 재배한</div>
-                    <div>최고의 농한물을</div>
-                    <div>저렴한 가격에</div>
-                </TextBox>
-
-            </RelWrapper>
+                    <TextBox>
+                        <div>건강한 식단과</div>
+                        <div>신선한 식단</div>
+                        <div>그리고 직접 재배한</div>
+                        <div>최고의 농한물을</div>
+                        <div>저렴한 가격에</div>
+                    </TextBox>
+                </RelWrapper>
+            </Fade>    
 
             <div style={{ marginBottom: "300px" }}></div>
 
